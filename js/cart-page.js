@@ -218,7 +218,7 @@ function placeOrder() {
     '*Payment:* ' + payName + '\n\n' +
     'Please confirm or cancel this order.';
 
-  var waNumber = (XNOTE.whatsappNumber || '201020534062').replace(/\D/g, '');
+  var waNumber = (XNOTE.whatsappNumber || '201550933501').replace(/\D/g, '');
   var waUrl    = 'https://wa.me/' + waNumber + '?text=' + encodeURIComponent(waMsg);
 
   /* ── 3. Show success overlay ── */

@@ -1,6 +1,6 @@
 window.XNOTE = window.XNOTE || {};
 
-XNOTE.whatsappNumber = '201020534062';
+XNOTE.whatsappNumber = '201550933501';
 
 /* ── Shipping costs (EGP) ──
    local   = Cairo & nearby areas
