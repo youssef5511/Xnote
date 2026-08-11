@@ -2062,3 +2062,283 @@ a.contact-channel:hover {
     justify-content: center;
   }
 }
+
+/* ═══════════════════════════════════════════════
+   COLLECTION PAGE — Refined Toolbar (search + filters)
+   Replaces the old intrusive sticky bar
+════════════════════════════════════════════════ */
+.collection-section {
+  padding-top: 0 !important;
+}
+
+.collection-toolbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.8rem;
+  padding: 3rem 0 2.5rem;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 3rem;
+}
+
+/* Search field */
+.collection-toolbar__search {
+  position: relative;
+  width: 100%;
+  max-width: 540px;
+  display: flex;
+  align-items: center;
+}
+
+.collection-toolbar__search-icon {
+  position: absolute;
+  left: 1rem;
+  width: 14px;
+  height: 14px;
+  color: var(--muted);
+  pointer-events: none;
+  stroke-width: 1.5;
+  flex-shrink: 0;
+  transition: color var(--t-med) var(--ease);
+}
+
+.collection-toolbar__search:focus-within .collection-toolbar__search-icon {
+  color: var(--gold-dim);
+}
+
+.collection-toolbar__input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--border-light);
+  color: var(--ivory);
+  font-family: var(--sans);
+  font-size: 0.82rem;
+  font-weight: 300;
+  letter-spacing: 0.06em;
+  padding: 0.7rem 2.5rem 0.7rem 2.5rem;
+  outline: none;
+  transition: border-color var(--t-med) var(--ease);
+  border-radius: 0;
+}
+
+.collection-toolbar__input:focus {
+  border-bottom-color: var(--gold-dim);
+}
+
+.collection-toolbar__input::placeholder {
+  color: var(--muted);
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+}
+
+.collection-toolbar__clear {
+  position: absolute;
+  right: 0.2rem;
+  width: 24px;
+  height: 24px;
+  background: none;
+  border: none;
+  color: var(--muted);
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color var(--t-fast);
+  padding: 0;
+}
+
+.collection-toolbar__clear:hover { color: var(--ivory); }
+
+/* Filter pills row */
+.collection-toolbar__filters {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.filter-pill {
+  font-family: var(--sans);
+  font-size: 0.6rem;
+  font-weight: 300;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--muted);
+  padding: 0.45rem 1.2rem;
+  border: 1px solid transparent;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 100px;
+  transition:
+    color var(--t-med) var(--ease),
+    border-color var(--t-med) var(--ease),
+    background var(--t-med) var(--ease);
+}
+
+.filter-pill:hover {
+  color: var(--ivory-dim);
+  border-color: var(--border-light);
+}
+
+.filter-pill.active {
+  color: var(--obsidian);
+  background: var(--gold);
+  border-color: var(--gold);
+}
+
+/* Mobile toolbar */
+@media (max-width: 699px) {
+  .collection-toolbar {
+    padding: 2rem 0 1.8rem;
+    gap: 1.4rem;
+  }
+  .collection-toolbar__input {
+    font-size: 0.78rem;
+  }
+  .filter-pill {
+    font-size: 0.58rem;
+    padding: 0.4rem 0.9rem;
+  }
+}
+
+/* ═══════════════════════════════════════════════
+   OFFER IMAGE BANNER — Homepage placeholder
+   Replace the placeholder div with an <img> when ready
+════════════════════════════════════════════════ */
+.offer-img-banner {
+  padding-block: 2.5rem;
+}
+
+.offer-img-banner .container {
+  display: flex;
+  justify-content: center;
+}
+
+.offer-img-banner__link {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  border-radius: 2px;
+  overflow: hidden;
+  position: relative;
+  transition: opacity var(--t-med) var(--ease), transform var(--t-med) var(--ease);
+}
+
+.offer-img-banner__link:hover {
+  opacity: 0.92;
+  transform: translateY(-3px);
+}
+
+/* Actual banner image */
+.offer-img-banner__img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: 2px;
+}
+
+/* Placeholder (until you have the real image) */
+.offer-img-banner__placeholder {
+  width: 100%;
+  min-height: 220px;
+  background:
+    radial-gradient(ellipse 70% 60% at 50% 100%, rgba(201,169,110,0.09) 0%, transparent 70%),
+    var(--surface);
+  border: 1px dashed var(--border-light);
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: border-color var(--t-med) var(--ease), background var(--t-med) var(--ease);
+}
+
+.offer-img-banner__link:hover .offer-img-banner__placeholder {
+  border-color: var(--gold-dim);
+  background:
+    radial-gradient(ellipse 70% 60% at 50% 100%, rgba(201,169,110,0.12) 0%, transparent 70%),
+    rgba(201,169,110,0.02);
+}
+
+.offer-img-banner__placeholder-inner {
+  text-align: center;
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.offer-img-banner__placeholder-label {
+  font-family: var(--sans);
+  font-size: 0.55rem;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: var(--obsidian);
+  background: var(--gold);
+  padding: 0.3rem 1rem;
+  display: inline-block;
+}
+
+.offer-img-banner__placeholder-text {
+  font-family: var(--serif);
+  font-size: 1.4rem;
+  font-weight: 300;
+  font-style: italic;
+  color: var(--muted);
+  letter-spacing: 0.03em;
+}
+
+.offer-img-banner__placeholder-cta {
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold-dim);
+}
+
+/* Offer img banner — mobile */
+@media (max-width: 699px) {
+  .offer-img-banner {
+    padding-block: 1.5rem;
+  }
+  .offer-img-banner__placeholder {
+    min-height: 150px;
+  }
+  .offer-img-banner__placeholder-text {
+    font-size: 1.1rem;
+  }
+}
+
+/* ═══════════════════════════════════════════════
+   GLOBAL RESPONSIVE POLISH
+════════════════════════════════════════════════ */
+
+/* Shared container — ensures consistent inline padding */
+.container {
+  width: 100%;
+  max-width: var(--max-w);
+  margin-inline: auto;
+  padding-inline: clamp(1.2rem, 5vw, 5rem);
+}
+
+/* Section base spacing */
+.section {
+  padding-block: clamp(3.5rem, 7vw, 7rem);
+}
+.section--ink     { background: var(--ink); }
+.section--surface { background: var(--surface); }
+
+/* Page hero — mobile tightening */
+@media (max-width: 600px) {
+  .page-hero__inner { padding-block: 3rem 2.5rem; }
+  .page-hero__title { font-size: clamp(2rem, 9vw, 3.2rem); }
+}
+
+/* Footer — mobile padding */
+@media (max-width: 580px) {
+  .footer { padding: 3.5rem 1.5rem 2rem; }
+}

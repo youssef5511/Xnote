@@ -1,1 +1,21 @@
+# Google Apps Script backend (deployed separately — not part of the public repo)
 google-apps-script/
+
+# Internal scratch / notes
+reqs.txt
+
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs & temp
+*.log
+*.tmp

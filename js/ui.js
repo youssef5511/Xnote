@@ -404,3 +404,73 @@ XNOTE.ui.updateFavCount = function() {
 window.addEventListener('storage', function(e) {
   if (e.key === 'xnote_wish_v2') XNOTE.ui.updateFavCount();
 });
+
+/* ═══════════════════════════════════════════════
+   XNOTE Analytics — lightweight pageview tracker
+   Fires a silent background POST to your Google Sheets endpoint.
+
+   HOW TO ACTIVATE:
+     1. Deploy your updated Code.gs as a new Web App
+     2. Set the endpoint variable below:
+        XNOTE.analyticsEndpoint = 'https://script.google.com/macros/s/YOUR_ID/exec';
+   ═══════════════════════════════════════════════ */
+XNOTE.analyticsEndpoint = '';   /* ← paste your Google Apps Script URL here */
+
+XNOTE.analytics = (function() {
+  'use strict';
+
+  function getDevice() {
+    var ua = navigator.userAgent || '';
+    if (/Mobi|Android|iPhone|iPod/i.test(ua)) return 'mobile';
+    if (/iPad|Tablet/i.test(ua)) return 'tablet';
+    return 'desktop';
+  }
+
+  function getPage() {
+    var path = location.pathname.split('/').pop();
+    return path || 'index.html';
+  }
+
+  function getReferrer() {
+    return document.referrer ? document.referrer : '(direct)';
+  }
+
+  function track() {
+    var endpoint = XNOTE.analyticsEndpoint;
+    if (!endpoint) return;   /* not configured — skip silently */
+
+    var payload = {
+      type:     'pageview',
+      page:     getPage(),
+      referrer: getReferrer(),
+      device:   getDevice(),
+      screen:   (window.screen.width || 0) + 'x' + (window.screen.height || 0),
+    };
+
+    /* Use sendBeacon if available (doesn't block page unload) */
+    if (navigator.sendBeacon) {
+      var blob = new Blob([JSON.stringify(payload)], { type: 'application/json' });
+      navigator.sendBeacon(endpoint, blob);
+      return;
+    }
+
+    /* Fallback: fire-and-forget fetch */
+    try {
+      fetch(endpoint, {
+        method:      'POST',
+        headers:     { 'Content-Type': 'application/json' },
+        body:        JSON.stringify(payload),
+        keepalive:   true,
+      }).catch(function() { /* Silently ignore network errors */ });
+    } catch (err) { /* Silently ignore */ }
+  }
+
+  /* Auto-track on page load */
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', track);
+  } else {
+    track();
+  }
+
+  return { track: track };
+}());

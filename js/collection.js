@@ -89,10 +89,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
   renderGrid();
 
-  /* Filter tabs */
-  document.querySelectorAll('.filter-tab').forEach(function(tab) {
+  /* Filter pills */
+  document.querySelectorAll('.filter-pill').forEach(function(tab) {
     tab.addEventListener('click', function() {
-      document.querySelectorAll('.filter-tab').forEach(function(t) { t.classList.remove('active'); });
+      document.querySelectorAll('.filter-pill').forEach(function(t) { t.classList.remove('active'); });
       tab.classList.add('active');
       _activeFilter = tab.dataset.filter;
       renderGrid();
@@ -112,7 +112,7 @@ document.addEventListener('DOMContentLoaded', function () {
       this.placeholder = 'Try: rose, oud, fresh, bestseller, gift, night…';
     });
     searchInput.addEventListener('blur', function() {
-      this.placeholder = 'Search by name, note, or mood… e.g. rose, oud, fresh, bestseller';
+      this.placeholder = 'Search fragrances, notes, moods…';
     });
   }
 
