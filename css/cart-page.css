@@ -578,7 +578,7 @@
 .place-order-btn { width: 100%; margin-top: 2.5rem; }
 
 /* ── Receipt Preview ── */
-.checkout-receipt-col { position: sticky; top: calc(var(--nav-h) + 1rem); }
+.checkout-receipt-col { position: static; top: calc(var(--nav-h) + 1rem); }
 
 .receipt-preview {
   background: var(--surface);
