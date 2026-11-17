@@ -3,7 +3,7 @@ import { readFileSync, writeFileSync, mkdirSync, rmSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { createHash } from 'node:crypto';
 import { site } from '../src/site.mjs';
-import { products, families, bundle } from '../src/products.mjs';
+import { products, families, bundle, notesAr } from '../src/products.mjs';
 import {
   homePage,
   shopPage,
@@ -19,14 +19,17 @@ import {
   productPath,
   noteIndex,
   noteKey,
+  locale,
+  LANGS,
 } from '../src/templates.mjs';
 
 const root = fileURLToPath(new URL('..', import.meta.url));
 const src = (p) => join(root, 'src', p);
 
 const keepUnits = (html) =>
-  html.replace(/(<script[\s\S]*?<\/script>|<style[\s\S]*?<\/style>)|(\d) (ml|EGP)\b/g, (m, block, d, unit) =>
-    block ? block : `${d}&nbsp;${unit}`
+  html.replace(
+    /(<script[\s\S]*?<\/script>|<style[\s\S]*?<\/style>)|(\d) (ml|EGP|مل|ج\.م)(?![\w\u0600-\u06ff])/g,
+    (m, block, d, unit) => (block ? block : `${d}&nbsp;${unit}`)
   );
 
 function write(path, content) {
@@ -46,7 +49,17 @@ function minifyCss(css) {
     .trim();
 }
 
-for (const dir of ['shop', 'perfumes', 'cart', 'wishlist', 'offers', 'about', 'contact', 'order-check']) {
+for (const dir of [
+  'shop',
+  'perfumes',
+  'cart',
+  'wishlist',
+  'offers',
+  'about',
+  'contact',
+  'order-check',
+  'ar',
+]) {
   rmSync(join(root, dir), { recursive: true, force: true });
 }
 
@@ -54,18 +67,27 @@ const css = minifyCss(readFileSync(src('styles.css'), 'utf8'));
 
 const clientData = {
   currency: site.currency,
+  currencyAr: site.currencyAr,
   whatsapp: site.whatsapp,
   shipping: site.shipping,
-  bundle: { slug: bundle.slug, name: bundle.name, price: bundle.price, ml: bundle.ml },
-  products: products.map((p) => ({
-    slug: p.slug,
-    name: p.name,
-    sizes: p.sizes,
-    accord: p.accord,
-    notes: p.notes,
-    familyName: families.find((f) => f.key === p.family).name,
-    from: Math.min(...p.sizes.map((s) => s.price)),
-  })),
+  payments: site.payments,
+  bundle: { slug: bundle.slug, name: bundle.name, nameAr: bundle.nameAr, price: bundle.price, ml: bundle.ml },
+  products: products.map((p) => {
+    const fam = families.find((f) => f.key === p.family);
+    return {
+      slug: p.slug,
+      name: p.name,
+      nameAr: p.nameAr,
+      sizes: p.sizes,
+      accord: p.accord,
+      accordAr: p.accordAr,
+      notes: p.notes,
+      notesAr: p.notes.map((n) => notesAr[n]),
+      familyName: fam.name,
+      familyNameAr: fam.nameAr,
+      from: Math.min(...p.sizes.map((s) => s.price)),
+    };
+  }),
   popularNotes: [
     ...new Set([
       ...noteIndex()
@@ -75,7 +97,7 @@ const clientData = {
       'Rose',
       'Coffee',
     ]),
-  ].map((name) => ({ name, key: noteKey(name) })),
+  ].map((name) => ({ name, nameAr: notesAr[name], key: noteKey(name) })),
 };
 const js = readFileSync(src('app.js'), 'utf8').replace('__DATA__', JSON.stringify(clientData));
 write('assets/js/site.js', js);
@@ -83,15 +105,23 @@ const jsVersion = createHash('sha1').update(js).digest('hex').slice(0, 8);
 
 const ctx = { css, jsVersion };
 
-write('index.html', homePage(ctx));
-write('shop/index.html', shopPage(ctx));
-for (const f of families) write(`shop/${f.key}/index.html`, shopPage(ctx, f));
-for (const p of products) write(`perfumes/${p.slug}/index.html`, productPage(ctx, p));
-write('offers/index.html', offersPage(ctx));
-write('cart/index.html', cartPage(ctx));
-write('wishlist/index.html', wishlistPage(ctx));
-write('about/index.html', aboutPage(ctx));
-write('contact/index.html', contactPage(ctx));
+let pageCount = 0;
+for (const lang of LANGS) {
+  const L = locale(lang);
+  const out = (path, html) => {
+    write((L.ar ? 'ar/' : '') + path, html);
+    pageCount++;
+  };
+  out('index.html', homePage(ctx, L));
+  out('shop/index.html', shopPage(ctx, L));
+  for (const f of families) out(`shop/${f.key}/index.html`, shopPage(ctx, L, f));
+  for (const p of products) out(`perfumes/${p.slug}/index.html`, productPage(ctx, L, p));
+  out('offers/index.html', offersPage(ctx, L));
+  out('cart/index.html', cartPage(ctx, L));
+  out('wishlist/index.html', wishlistPage(ctx, L));
+  out('about/index.html', aboutPage(ctx, L));
+  out('contact/index.html', contactPage(ctx, L));
+}
 write('404.html', notFoundPage(ctx));
 write('order-check/index.html', orderCheckPage(ctx));
 
@@ -118,8 +148,15 @@ const urls = [
 write(
   'sitemap.xml',
   `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${urls.map((u) => `  <url><loc>${site.url}${u.path}</loc><lastmod>${today}</lastmod><priority>${u.priority}</priority></url>`).join('\n')}
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+${LANGS.flatMap((lang) =>
+  urls.map((u) => {
+    const alts = LANGS.map(
+      (l) => `<xhtml:link rel="alternate" hreflang="${l}" href="${site.url}${locale(l).path(u.path)}"/>`
+    ).join('');
+    return `  <url><loc>${site.url}${locale(lang).path(u.path)}</loc>${alts}<xhtml:link rel="alternate" hreflang="x-default" href="${site.url}${u.path}"/><lastmod>${today}</lastmod><priority>${u.priority}</priority></url>`;
+  })
+).join('\n')}
 </urlset>
 `
 );
@@ -129,6 +166,8 @@ write(
 Allow: /
 Disallow: /cart/
 Disallow: /wishlist/
+Disallow: /ar/cart/
+Disallow: /ar/wishlist/
 Disallow: /order-check/
 
 Sitemap: ${site.url}/sitemap.xml
@@ -155,4 +194,4 @@ write(
 );
 write('.nojekyll', '');
 
-console.log(`Built ${urls.length + 4} pages`);
+console.log(`Built ${pageCount + 2} pages`);

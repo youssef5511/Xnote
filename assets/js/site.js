@@ -9,7 +9,7 @@
     return;
   }
 
-  var DATA = {"currency":"EGP","whatsapp":"201550933501","shipping":[{"key":"normal","name":"Normal shipping","days":"3 to 5 business days","price":85},{"key":"fast","name":"Fast shipping","days":"1 to 2 business days","price":125}],"bundle":{"slug":"trilogy-bundle","name":"The Trilogy Bundle","price":900,"ml":50},"products":[{"slug":"rosendo-mateu-5","name":"Rosendo Mateu Nº 5","sizes":[{"ml":10,"price":170},{"ml":30,"price":450},{"ml":50,"price":600}],"accord":"Floral, woody","notes":["Rose","Bergamot","Vanilla","Cedarwood","White Musk","Amber","Incense"],"familyName":"Floral","from":170},{"slug":"imagination","name":"Imagination","sizes":[{"ml":10,"price":220},{"ml":30,"price":600},{"ml":50,"price":800}],"accord":"Fresh, citrus","notes":["Lemon","Ginger","Tea","Neroli","Musk","Amber"],"familyName":"Fresh","from":220},{"slug":"symphony","name":"Symphony","sizes":[{"ml":10,"price":160},{"ml":30,"price":450},{"ml":50,"price":650}],"accord":"Fresh, aromatic","notes":["Bergamot","Grapefruit","Ginger","Patchouli","Musk","Amber"],"familyName":"Fresh","from":160},{"slug":"stronger-with-you-intensely","name":"Stronger With You Intensely","sizes":[{"ml":10,"price":75},{"ml":30,"price":200},{"ml":50,"price":300}],"accord":"Oriental, woody","notes":["Pink Pepper","Cardamom","Chestnut","Iris","Vanilla","Amber","Leather"],"familyName":"Oriental","from":75},{"slug":"jimmy-choo","name":"Jimmy Choo","sizes":[{"ml":10,"price":75},{"ml":30,"price":200},{"ml":50,"price":300}],"accord":"Floral, sweet","notes":["Pear","Orange","Orchid","Caramel","Patchouli","Vanilla"],"familyName":"Floral","from":75},{"slug":"khamrah-qahwa","name":"Khamrah Qahwa","sizes":[{"ml":10,"price":75},{"ml":30,"price":200},{"ml":50,"price":300}],"accord":"Oriental, gourmand","notes":["Ginger","Cinnamon","Cardamom","Praline","Candied Fruits","White Flowers","Coffee","Tonka Bean","Musk","Benzoin","Vanilla"],"familyName":"Oriental","from":75},{"slug":"le-male-elixir","name":"Le Male Elixir","sizes":[{"ml":10,"price":75},{"ml":30,"price":200},{"ml":50,"price":300}],"accord":"Oriental, woody","notes":["Mint","Lavender","Honey","Patchouli","Vanilla","Tonka Bean"],"familyName":"Oriental","from":75},{"slug":"creed-silver-mountain-water","name":"Creed Silver Mountain Water","sizes":[{"ml":10,"price":90},{"ml":30,"price":240},{"ml":50,"price":350}],"accord":"Fresh, aquatic","notes":["Bergamot","Mandarin","Orange Blossom","Green Tea","Black Currant","Musk","Sandalwood","Galbanum"],"familyName":"Fresh","from":90},{"slug":"aqua-celestia","name":"Aqua Celestia","sizes":[{"ml":10,"price":90},{"ml":30,"price":240},{"ml":50,"price":350}],"accord":"Fresh, floral","notes":["Lemon","Mint","Black Currant Blossom","Jasmine","Hedione","Mimosa","Lily of the Valley","Musk"],"familyName":"Floral","from":90},{"slug":"creed-aventus","name":"Creed Aventus","sizes":[{"ml":10,"price":100},{"ml":30,"price":270},{"ml":50,"price":400}],"accord":"Fruity, woody","notes":["Bergamot","Black Currant","Pineapple","Apple","Birch","Patchouli","Rose","Moroccan Jasmine","Musk","Oakmoss","Vanilla","Ambergris"],"familyName":"Fresh","from":100},{"slug":"212-vip","name":"212 VIP","sizes":[{"ml":10,"price":90},{"ml":30,"price":240},{"ml":50,"price":350}],"accord":"Oriental, sweet","notes":["Rum","Tropical Fruits","Vanilla","Musk","Amber","Tonka Bean"],"familyName":"Oriental","from":90},{"slug":"imperial-valley-qisah","name":"Imperial Valley Qisah","sizes":[{"ml":10,"price":100},{"ml":30,"price":270},{"ml":50,"price":400}],"accord":"Smoky, woody","notes":["Davana","Italian Bergamot","Pink Pepper","White Amber","African Rosemary","Oud","Musk","Leather","Haitian Vetiver"],"familyName":"Smoky and woody","from":100}],"popularNotes":[{"name":"Musk","key":"musk"},{"name":"Vanilla","key":"vanilla"},{"name":"Amber","key":"amber"},{"name":"Bergamot","key":"bergamot"},{"name":"Patchouli","key":"patchouli"},{"name":"Ginger","key":"ginger"},{"name":"Oud","key":"oud"},{"name":"Rose","key":"rose"},{"name":"Coffee","key":"coffee"}]};
+  var DATA = {"currency":"EGP","currencyAr":"ج.م","whatsapp":"201550933501","shipping":[{"key":"normal","name":"Normal shipping","days":"3 to 5 business days","nameAr":"الشحن العادي","daysAr":"من 3 إلى 5 أيام عمل","price":85},{"key":"fast","name":"Fast shipping","days":"1 to 2 business days","nameAr":"الشحن السريع","daysAr":"من يوم إلى يومين عمل","price":125}],"payments":[{"key":"vodafone","name":"Vodafone Cash","nameAr":"فودافون كاش"},{"key":"instapay","name":"InstaPay","nameAr":"إنستاباي"}],"bundle":{"slug":"trilogy-bundle","name":"The Trilogy Bundle","nameAr":"مجموعة الثلاثية","price":900,"ml":50},"products":[{"slug":"rosendo-mateu-5","name":"Rosendo Mateu Nº 5","nameAr":"روسيندو ماتيو رقم 5","sizes":[{"ml":10,"price":170},{"ml":30,"price":450},{"ml":50,"price":600}],"accord":"Floral, woody","accordAr":"زهري، خشبي","notes":["Rose","Bergamot","Vanilla","Cedarwood","White Musk","Amber","Incense"],"notesAr":["ورد","برغموت","فانيليا","خشب الأرز","مسك أبيض","عنبر","بخور"],"familyName":"Floral","familyNameAr":"زهري","from":170},{"slug":"imagination","name":"Imagination","nameAr":"إيماجينيشن","sizes":[{"ml":10,"price":220},{"ml":30,"price":600},{"ml":50,"price":800}],"accord":"Fresh, citrus","accordAr":"منعش، حمضي","notes":["Lemon","Ginger","Tea","Neroli","Musk","Amber"],"notesAr":["ليمون","زنجبيل","شاي","نيرولي","مسك","عنبر"],"familyName":"Fresh","familyNameAr":"منعش","from":220},{"slug":"symphony","name":"Symphony","nameAr":"سيمفوني","sizes":[{"ml":10,"price":160},{"ml":30,"price":450},{"ml":50,"price":650}],"accord":"Fresh, aromatic","accordAr":"منعش، عطري","notes":["Bergamot","Grapefruit","Ginger","Patchouli","Musk","Amber"],"notesAr":["برغموت","جريب فروت","زنجبيل","باتشولي","مسك","عنبر"],"familyName":"Fresh","familyNameAr":"منعش","from":160},{"slug":"stronger-with-you-intensely","name":"Stronger With You Intensely","nameAr":"سترونجر ويذ يو إنتنسلي","sizes":[{"ml":10,"price":75},{"ml":30,"price":200},{"ml":50,"price":300}],"accord":"Oriental, woody","accordAr":"شرقي، خشبي","notes":["Pink Pepper","Cardamom","Chestnut","Iris","Vanilla","Amber","Leather"],"notesAr":["فلفل وردي","هيل","كستناء","سوسن","فانيليا","عنبر","جلد"],"familyName":"Oriental","familyNameAr":"شرقي","from":75},{"slug":"jimmy-choo","name":"Jimmy Choo","nameAr":"جيمي تشو","sizes":[{"ml":10,"price":75},{"ml":30,"price":200},{"ml":50,"price":300}],"accord":"Floral, sweet","accordAr":"زهري، حلو","notes":["Pear","Orange","Orchid","Caramel","Patchouli","Vanilla"],"notesAr":["كمثرى","برتقال","أوركيد","كراميل","باتشولي","فانيليا"],"familyName":"Floral","familyNameAr":"زهري","from":75},{"slug":"khamrah-qahwa","name":"Khamrah Qahwa","nameAr":"خمرة قهوة","sizes":[{"ml":10,"price":75},{"ml":30,"price":200},{"ml":50,"price":300}],"accord":"Oriental, gourmand","accordAr":"شرقي، سكري","notes":["Ginger","Cinnamon","Cardamom","Praline","Candied Fruits","White Flowers","Coffee","Tonka Bean","Musk","Benzoin","Vanilla"],"notesAr":["زنجبيل","قرفة","هيل","برالين","فواكه مسكّرة","زهور بيضاء","قهوة","حبوب التونكا","مسك","لبان جاوي","فانيليا"],"familyName":"Oriental","familyNameAr":"شرقي","from":75},{"slug":"le-male-elixir","name":"Le Male Elixir","nameAr":"لو مال إليكسير","sizes":[{"ml":10,"price":75},{"ml":30,"price":200},{"ml":50,"price":300}],"accord":"Oriental, woody","accordAr":"شرقي، خشبي","notes":["Mint","Lavender","Honey","Patchouli","Vanilla","Tonka Bean"],"notesAr":["نعناع","لافندر","عسل","باتشولي","فانيليا","حبوب التونكا"],"familyName":"Oriental","familyNameAr":"شرقي","from":75},{"slug":"creed-silver-mountain-water","name":"Creed Silver Mountain Water","nameAr":"كريد سيلفر ماونتن ووتر","sizes":[{"ml":10,"price":90},{"ml":30,"price":240},{"ml":50,"price":350}],"accord":"Fresh, aquatic","accordAr":"منعش، مائي","notes":["Bergamot","Mandarin","Orange Blossom","Green Tea","Black Currant","Musk","Sandalwood","Galbanum"],"notesAr":["برغموت","يوسفي","زهر البرتقال","شاي أخضر","كشمش أسود","مسك","خشب الصندل","قنّة"],"familyName":"Fresh","familyNameAr":"منعش","from":90},{"slug":"aqua-celestia","name":"Aqua Celestia","nameAr":"أكوا سيليستيا","sizes":[{"ml":10,"price":90},{"ml":30,"price":240},{"ml":50,"price":350}],"accord":"Fresh, floral","accordAr":"منعش، زهري","notes":["Lemon","Mint","Black Currant Blossom","Jasmine","Hedione","Mimosa","Lily of the Valley","Musk"],"notesAr":["ليمون","نعناع","زهر الكشمش الأسود","ياسمين","هيديون","ميموزا","زنبق الوادي","مسك"],"familyName":"Floral","familyNameAr":"زهري","from":90},{"slug":"creed-aventus","name":"Creed Aventus","nameAr":"كريد أفينتوس","sizes":[{"ml":10,"price":100},{"ml":30,"price":270},{"ml":50,"price":400}],"accord":"Fruity, woody","accordAr":"فاكهي، خشبي","notes":["Bergamot","Black Currant","Pineapple","Apple","Birch","Patchouli","Rose","Moroccan Jasmine","Musk","Oakmoss","Vanilla","Ambergris"],"notesAr":["برغموت","كشمش أسود","أناناس","تفاح","خشب البتولا","باتشولي","ورد","ياسمين مغربي","مسك","طحلب البلوط","فانيليا","عنبر رمادي"],"familyName":"Fresh","familyNameAr":"منعش","from":100},{"slug":"212-vip","name":"212 VIP","nameAr":"212 في آي بي","sizes":[{"ml":10,"price":90},{"ml":30,"price":240},{"ml":50,"price":350}],"accord":"Oriental, sweet","accordAr":"شرقي، حلو","notes":["Rum","Tropical Fruits","Vanilla","Musk","Amber","Tonka Bean"],"notesAr":["رم","فواكه استوائية","فانيليا","مسك","عنبر","حبوب التونكا"],"familyName":"Oriental","familyNameAr":"شرقي","from":90},{"slug":"imperial-valley-qisah","name":"Imperial Valley Qisah","nameAr":"إمبريال فالي قصة","sizes":[{"ml":10,"price":100},{"ml":30,"price":270},{"ml":50,"price":400}],"accord":"Smoky, woody","accordAr":"مدخّن، خشبي","notes":["Davana","Italian Bergamot","Pink Pepper","White Amber","African Rosemary","Oud","Musk","Leather","Haitian Vetiver"],"notesAr":["دافانا","برغموت إيطالي","فلفل وردي","عنبر أبيض","إكليل الجبل الأفريقي","عود","مسك","جلد","فيتيفر هايتي"],"familyName":"Smoky and woody","familyNameAr":"مدخّن وخشبي","from":100}],"popularNotes":[{"name":"Musk","nameAr":"مسك","key":"musk"},{"name":"Vanilla","nameAr":"فانيليا","key":"vanilla"},{"name":"Amber","nameAr":"عنبر","key":"amber"},{"name":"Bergamot","nameAr":"برغموت","key":"bergamot"},{"name":"Patchouli","nameAr":"باتشولي","key":"patchouli"},{"name":"Ginger","nameAr":"زنجبيل","key":"ginger"},{"name":"Oud","nameAr":"عود","key":"oud"},{"name":"Rose","nameAr":"ورد","key":"rose"},{"name":"Coffee","nameAr":"قهوة","key":"coffee"}]};
   var CART_KEY = 'xnote_cart_v2';
   var WISH_KEY = 'xnote_wish_v2';
   var CUSTOMER_KEY = 'xnote_customer';
@@ -27,8 +27,235 @@
       return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
     });
   }
-  function money(n) {
-    return n.toLocaleString('en-US') + '\u00a0' + DATA.currency;
+  var AR = document.documentElement.lang === 'ar';
+  var BASE = AR ? '/ar' : '';
+  var iso = function (s) {
+    return AR ? '\u2068' + s + '\u2069' : s;
+  };
+  var countAr = function (n, forms) {
+    return n === 1
+      ? forms[0]
+      : n === 2
+        ? forms[1]
+        : n >= 3 && n <= 10
+          ? n + ' ' + forms[2]
+          : n + ' ' + forms[3];
+  };
+  var I = AR
+    ? {
+        ml: 'مل',
+        bundleMeta: function (ml) {
+          return 'ثلاث زجاجات ' + ml + '\u00a0مل';
+        },
+        lineMeta: function (ml, price) {
+          return ml + '\u00a0مل، ' + price + ' للزجاجة';
+        },
+        lineLabel: function (name, ml) {
+          return iso(name) + '، ' + ml + '\u00a0مل';
+        },
+        addedToast: function (label) {
+          return 'تمت إضافة ' + label + ' إلى السلة';
+        },
+        added: 'تمت الإضافة',
+        removedToast: function (label) {
+          return 'تم حذف ' + label;
+        },
+        wishSaved: function (name) {
+          return 'تم حفظ ' + iso(name) + ' في المفضلة';
+        },
+        wishRemoved: function (name) {
+          return 'تم حذف ' + iso(name) + ' من المفضلة';
+        },
+        wishAria: function (on, name) {
+          return on ? 'حذف ' + name + ' من المفضلة' : 'حفظ ' + name + ' في المفضلة';
+        },
+        cartAria: function (n) {
+          return 'السلة، ' + (n === 0 ? 'فارغة' : countAr(n, ['منتج واحد', 'منتجان', 'منتجات', 'منتجًا']));
+        },
+        dec: function (l) {
+          return 'تقليل كمية ' + l;
+        },
+        inc: function (l) {
+          return 'زيادة كمية ' + l;
+        },
+        qtyOf: function (l) {
+          return 'كمية ' + l;
+        },
+        removeOf: function (l) {
+          return 'حذف ' + l;
+        },
+        remove: 'حذف',
+        drawerEmpty: 'سلتك فارغة.',
+        drawerEmptyHint: 'اكتشف عطرًا من النوتات التي تحبها.',
+        shopAll: 'تسوّق كل العطور',
+        popular: 'نوتات شائعة',
+        none: function (q) {
+          return 'لا توجد نتائج لـ «' + q + '». جرّب نوتة:';
+        },
+        resultsLabel: 'العطور',
+        resultLine: function (p, price) {
+          return p.nameAr + '، يبدأ من ' + price;
+        },
+        seeAll: function (n) {
+          return 'شاهد كل النتائج (' + n + ')';
+        },
+        showIt: 'اعرضه في المتجر',
+        showThese: 'اعرضها في المتجر',
+        forMl: function (q, ml) {
+          return q > 1 ? 'لعدد ' + q + ' × ' + ml + '\u00a0مل' : 'لحجم ' + ml + '\u00a0مل';
+        },
+        barPrice: function (price, q, ml) {
+          return price + '، ' + (q > 1 ? q + ' × ' : '') + ml + '\u00a0مل';
+        },
+        waOrder: function (name, ml, q) {
+          return 'مرحبًا، أريد طلب ' + name + ' (' + ml + ' مل)' + (q > 1 ? ' × ' + q : '') + '.';
+        },
+        count: function (n) {
+          return n === 0 ? 'لا توجد عطور' : countAr(n, ['عطر واحد', 'عطران', 'عطور', 'عطرًا']);
+        },
+        withNote: function (name) {
+          return ' تحتوي على ' + name;
+        },
+        forQuery: function (q) {
+          return ' لبحث «' + q + '»';
+        },
+        errName: 'اكتب اسمك بالكامل.',
+        errPhone: 'اكتب رقم موبايل مصري، مثل 010 1234 5678.',
+        errGov: 'اختر محافظتك.',
+        errCity: 'اكتب المدينة أو المنطقة.',
+        errAddress: 'اكتب العنوان بالتفصيل.',
+        formError: function (n) {
+          return n === 1
+            ? 'يوجد بيان واحد يحتاج تصحيحًا بالأعلى.'
+            : 'يوجد ' + n + ' بيانات تحتاج تصحيحًا بالأعلى.';
+        },
+        msg: {
+          title: 'طلب جديد من موقع X Note',
+          order: 'رقم الطلب',
+          items: 'المنتجات',
+          subtotal: 'المجموع الفرعي',
+          shipping: 'الشحن',
+          total: 'الإجمالي',
+          payment: 'الدفع',
+          delivery: 'التوصيل',
+          name: 'الاسم',
+          mobile: 'الموبايل',
+          address: 'العنوان',
+          notes: 'ملاحظات',
+          confirm: 'برجاء تأكيد طلبي.',
+          sep: '، ',
+        },
+        doneTitle: 'طلبك جاهز للإرسال',
+      }
+    : {
+        ml: 'ml',
+        bundleMeta: function (ml) {
+          return 'Three ' + ml + '\u00a0ml bottles';
+        },
+        lineMeta: function (ml, price) {
+          return ml + '\u00a0ml, ' + price + ' each';
+        },
+        lineLabel: function (name, ml) {
+          return name + ', ' + ml + '\u00a0ml';
+        },
+        addedToast: function (label) {
+          return label + ' added to your cart';
+        },
+        added: 'Added',
+        removedToast: function (label) {
+          return label + ' removed';
+        },
+        wishSaved: function (name) {
+          return name + ' saved to your wishlist';
+        },
+        wishRemoved: function (name) {
+          return name + ' removed from your wishlist';
+        },
+        wishAria: function (on, name) {
+          return (on ? 'Remove ' : 'Save ') + name + (on ? ' from' : ' to') + ' wishlist';
+        },
+        cartAria: function (n) {
+          return 'Cart, ' + n + (n === 1 ? ' item' : ' items');
+        },
+        dec: function (l) {
+          return 'Decrease quantity of ' + l;
+        },
+        inc: function (l) {
+          return 'Increase quantity of ' + l;
+        },
+        qtyOf: function (l) {
+          return 'Quantity of ' + l;
+        },
+        removeOf: function (l) {
+          return 'Remove ' + l;
+        },
+        remove: 'Remove',
+        drawerEmpty: 'Your cart is empty.',
+        drawerEmptyHint: 'Find a fragrance by the notes you love.',
+        shopAll: 'Shop all fragrances',
+        popular: 'Popular notes',
+        none: function (q) {
+          return 'Nothing matches “' + q + '”. Try a note instead:';
+        },
+        resultsLabel: 'Fragrances',
+        resultLine: function (p, price) {
+          return p.accord + ', from ' + price;
+        },
+        seeAll: function (n) {
+          return 'See all ' + n + ' results';
+        },
+        showIt: 'Show it in the shop',
+        showThese: 'Show these in the shop',
+        forMl: function (q, ml) {
+          return q > 1 ? 'for ' + q + ' × ' + ml + '\u00a0ml' : 'for ' + ml + '\u00a0ml';
+        },
+        barPrice: function (price, q, ml) {
+          return price + ', ' + (q > 1 ? q + ' × ' : '') + ml + '\u00a0ml';
+        },
+        waOrder: function (name, ml, q) {
+          return 'Hello, I would like to order ' + name + ' (' + ml + ' ml)' + (q > 1 ? ' × ' + q : '') + '.';
+        },
+        count: function (n) {
+          return n + (n === 1 ? ' fragrance' : ' fragrances');
+        },
+        withNote: function (name) {
+          return ' with ' + name;
+        },
+        forQuery: function (q) {
+          return ' for “' + q + '”';
+        },
+        errName: 'Enter your full name.',
+        errPhone: 'Enter an Egyptian mobile number like 01012345678.',
+        errGov: 'Choose your governorate.',
+        errCity: 'Enter your city or area.',
+        errAddress: 'Enter your street address.',
+        formError: function (n) {
+          return n === 1 ? 'One detail needs fixing above.' : n + ' details need fixing above.';
+        },
+        msg: {
+          title: 'New order from the X Note website',
+          order: 'Order',
+          items: 'Items',
+          subtotal: 'Subtotal',
+          shipping: 'Shipping',
+          total: 'Total',
+          payment: 'Payment',
+          delivery: 'Delivery',
+          name: 'Name',
+          mobile: 'Mobile',
+          address: 'Address',
+          notes: 'Notes',
+          confirm: 'Please confirm my order.',
+          sep: ', ',
+        },
+        doneTitle: 'Order ready to send',
+      };
+  function money(n, lang) {
+    var ar = lang ? lang === 'ar' : AR;
+    return n.toLocaleString('en-US') + '\u00a0' + (ar ? DATA.currencyAr : DATA.currency);
+  }
+  function pName(p) {
+    return AR ? p.nameAr : p.name;
   }
   function bySlug(slug) {
     for (var i = 0; i < DATA.products.length; i++)
@@ -78,7 +305,8 @@
   };
 
   var STOP =
-    ' perfume perfumes fragrance fragrances scent scents cologne the a an for of with and by x xnote note notes ml edp parfum eau de i want need me my some please ';
+    ' perfume perfumes fragrance fragrances scent scents cologne the a an for of with and by x xnote note notes ml edp parfum eau de i want need me my some please ' +
+    'عطر عطور برفان برفيوم بارفان ريحه رايحه رائحه مل من في عن او و اريد عايز عاوز ابحث اكس نوت نوته نوتات زجاجه ';
   var SYNONYMS = {
     sweet: ['vanilla', 'caramel', 'praline', 'honey', 'tonka', 'candied', 'rum', 'gourmand', 'benzoin'],
     fresh: [
@@ -115,18 +343,55 @@
     gourmand: ['vanilla', 'caramel', 'praline', 'coffee', 'tonka', 'honey', 'gourmand'],
     oriental: ['amber', 'vanilla', 'oud', 'incense', 'oriental'],
   };
+  [
+    ['حلو سكري مسكر حلوه', 'sweet'],
+    ['منعش فريش منعشه انتعاش', 'fresh'],
+    ['حمضي حمضيات', 'citrus'],
+    ['حار توابل بهارات', 'spicy'],
+    ['مدخن دخاني دخان', 'smoky'],
+    ['خشبي خشب اخشاب', 'woody'],
+    ['زهري ورود زهور زهر', 'floral'],
+    ['فاكهي فواكه فاكهه', 'fruity'],
+    ['دافي دافيه دفا', 'warm'],
+    ['ليلي سهره مسائي مسا ليل', 'night'],
+    ['صيفي صيف', 'summer'],
+    ['شتوي شتا شتاء', 'winter'],
+    ['مكتب شغل عمل رسمي', 'office'],
+    ['نظيف نظافه', 'clean'],
+    ['مائي بحري', 'aquatic'],
+    ['جورماند', 'gourmand'],
+    ['شرقي شرقيه', 'oriental'],
+  ].forEach(function (pair) {
+    pair[0].split(' ').forEach(function (w) {
+      SYNONYMS[w] = SYNONYMS[pair[1]];
+    });
+  });
 
   function norm(s) {
     return String(s)
       .toLowerCase()
       .replace(/º/g, 'o')
+      .replace(/[\u0660-\u0669]/g, function (d) {
+        return String(d.charCodeAt(0) - 0x0660);
+      })
       .normalize('NFD')
-      .replace(/[̀-ͯ]/g, '')
-      .replace(/[^a-z0-9]+/g, ' ')
+      .replace(/[\u0300-\u036f\u064b-\u065f\u0670\u0640]/g, '')
+      .replace(/[\u0622\u0623\u0625\u0671]/g, '\u0627')
+      .replace(/\u0629/g, '\u0647')
+      .replace(/\u0649/g, '\u064a')
+      .replace(/\u0624/g, '\u0648')
+      .replace(/\u0626/g, '\u064a')
+      .replace(/[^a-z0-9\u0621-\u064a]+/g, ' ')
       .trim();
   }
   function stem(w) {
-    if (w.length > 3 && /s$/.test(w) && !/(ss|us|is)$/.test(w)) return w.slice(0, -1);
+    if (/^[a-z]/.test(w)) {
+      if (w.length > 3 && /s$/.test(w) && !/(ss|us|is)$/.test(w)) return w.slice(0, -1);
+      return w;
+    }
+    if (w.length > 4 && w.indexOf('\u0648\u0627\u0644') === 0) return w.slice(3);
+    if (w.length > 3 && w.indexOf('\u0627\u0644') === 0) return w.slice(2);
+    if (w.length > 4 && /^[\u0628\u0644\u0641\u0643]\u0627\u0644/.test(w)) return w.slice(3);
     return w;
   }
   function words(s) {
@@ -154,18 +419,18 @@
 
   var INDEX = DATA.products.map(function (p) {
     var fields = [];
-    words(p.name).forEach(function (w) {
+    words(p.name + ' ' + p.nameAr).forEach(function (w) {
       fields.push([w, 10]);
     });
-    p.notes.forEach(function (n) {
+    p.notes.concat(p.notesAr).forEach(function (n) {
       words(n).forEach(function (w) {
         fields.push([w, 6]);
       });
     });
-    words(p.accord + ' ' + p.familyName).forEach(function (w) {
+    words([p.accord, p.familyName, p.accordAr, p.familyNameAr].join(' ')).forEach(function (w) {
       fields.push([w, 4]);
     });
-    return { p: p, fields: fields, name: norm(p.name) };
+    return { p: p, fields: fields, name: norm(p.name), nameAr: norm(p.nameAr) };
   });
 
   function tokenScore(t, entry) {
@@ -204,7 +469,8 @@
         if (!s) return;
         total += s;
       }
-      if (phrase.length > 2 && entry.name.indexOf(phrase) !== -1) total += 15;
+      if (phrase.length > 2 && (entry.name.indexOf(phrase) !== -1 || entry.nameAr.indexOf(phrase) !== -1))
+        total += 15;
       out.push({ p: entry.p, score: total, order: order });
     });
     out.sort(function (a, b) {
@@ -240,11 +506,12 @@
         return {
           key: item.key,
           qty: qty,
-          name: DATA.bundle.name,
-          href: '/offers/',
+          name: AR ? DATA.bundle.nameAr : DATA.bundle.name,
+          href: BASE + '/offers/',
           img: '/assets/img/products/' + DATA.bundle.slug + '-320.webp',
-          meta: 'Three ' + DATA.bundle.ml + '\u00a0ml bottles',
-          label: DATA.bundle.name,
+          meta: I.bundleMeta(DATA.bundle.ml),
+          label: AR ? DATA.bundle.nameAr : DATA.bundle.name,
+          msgLabel: AR ? DATA.bundle.nameAr : DATA.bundle.name,
           unit: DATA.bundle.price,
           total: DATA.bundle.price * qty,
         };
@@ -258,10 +525,12 @@
         key: item.key,
         qty: qty,
         name: p.name,
-        href: '/perfumes/' + p.slug + '/',
+        sub: AR ? p.nameAr : '',
+        href: BASE + '/perfumes/' + p.slug + '/',
         img: '/assets/img/products/' + p.slug + '-320.webp',
-        meta: ml + '\u00a0ml, ' + money(size.price) + ' each',
-        label: p.name + ', ' + ml + '\u00a0ml',
+        meta: I.lineMeta(ml, money(size.price)),
+        label: I.lineLabel(p.name, ml),
+        msgLabel: p.name + I.msg.sep + ml + ' ' + I.ml,
         unit: size.price,
         total: size.price * qty,
       };
@@ -289,7 +558,7 @@
     if (found) found.qty = clampQty(clampQty(found.qty) + qty);
     else items.push({ key: key, id: slug, size: ml + 'ml', qty: clampQty(qty) });
     writeCart(items);
-    added(button, p.name + ', ' + ml + '\u00a0ml added to your cart');
+    added(button, I.addedToast(I.lineLabel(p.name, ml)));
   }
   function addBundle(button) {
     var key = 'bundle|' + DATA.bundle.slug;
@@ -309,7 +578,7 @@
         bundlePrice: DATA.bundle.price,
       });
     writeCart(items);
-    added(button, DATA.bundle.name + ' added to your cart');
+    added(button, I.addedToast(AR ? DATA.bundle.nameAr : DATA.bundle.name));
   }
   function added(button, message) {
     $$('[data-cart-count]').forEach(function (c) {
@@ -321,7 +590,7 @@
         var original = label.textContent;
         button.style.minWidth = button.offsetWidth + 'px';
         button.classList.add('is-added');
-        label.textContent = 'Added';
+        label.textContent = I.added;
         setTimeout(function () {
           button.classList.remove('is-added');
           label.textContent = original;
@@ -352,7 +621,7 @@
           return i.key !== key;
         })
       );
-      if (line) toast(line.label + ' removed');
+      if (line) toast(I.removedToast(line.label));
     };
     if (reduceMotion || !el.length) return done();
     el.forEach(function (n) {
@@ -371,10 +640,10 @@
     var i = list.indexOf(slug);
     if (i === -1) {
       list.push(slug);
-      toast(p.name + ' saved to your wishlist');
+      toast(I.wishSaved(p.name));
     } else {
       list.splice(i, 1);
-      toast(p.name + ' removed from your wishlist');
+      toast(I.wishRemoved(p.name));
     }
     store.set(WISH_KEY, list);
     if (button) retrigger(button, 'pop');
@@ -407,16 +676,17 @@
       '" tabindex="-1" aria-hidden="true"><img src="' +
       l.img +
       '" width="320" height="400" alt="" decoding="async"></a>' +
-      '<div class="line__info"><a class="line__name" href="' +
+      '<div class="line__info"><a class="line__name" dir="auto" href="' +
       l.href +
       '">' +
       esc(l.name) +
       '</a>' +
+      (l.sub ? '<p class="line__translit">' + esc(l.sub) + '</p>' : '') +
       '<p class="line__meta">' +
       esc(l.meta) +
       '</p>' +
-      '<div class="qty qty--small"><button type="button" data-line-step="-1" aria-label="Decrease quantity of ' +
-      esc(l.label) +
+      '<div class="qty qty--small"><button type="button" data-line-step="-1" aria-label="' +
+      esc(I.dec(l.label)) +
       '"' +
       (l.qty <= 1 ? ' disabled' : '') +
       '>&minus;</button>' +
@@ -424,20 +694,22 @@
       MAX_QTY +
       '" value="' +
       l.qty +
-      '" data-line-qty aria-label="Quantity of ' +
-      esc(l.label) +
+      '" data-line-qty aria-label="' +
+      esc(I.qtyOf(l.label)) +
       '">' +
-      '<button type="button" data-line-step="1" aria-label="Increase quantity of ' +
-      esc(l.label) +
+      '<button type="button" data-line-step="1" aria-label="' +
+      esc(I.inc(l.label)) +
       '"' +
       (l.qty >= MAX_QTY ? ' disabled' : '') +
       '>+</button></div></div>' +
       '<div class="line__end"><span class="line__price">' +
       money(l.total) +
       '</span>' +
-      '<button type="button" class="line__remove" data-line-remove aria-label="Remove ' +
-      esc(l.label) +
-      '">Remove</button></div></div>'
+      '<button type="button" class="line__remove" data-line-remove aria-label="' +
+      esc(I.removeOf(l.label)) +
+      '">' +
+      I.remove +
+      '</button></div></div>'
     );
   }
 
@@ -478,7 +750,15 @@
     $('[data-drawer-count]', drawer).textContent = n ? '(' + n + ')' : '';
     if (!lines.length) {
       body.innerHTML =
-        '<div class="empty empty--sheet"><p>Your cart is empty.</p><p class="muted small">Find a fragrance by the notes you love.</p><a class="btn" href="/shop/">Shop all fragrances</a></div>';
+        '<div class="empty empty--sheet"><p>' +
+        I.drawerEmpty +
+        '</p><p class="muted small">' +
+        I.drawerEmptyHint +
+        '</p><a class="btn" href="' +
+        BASE +
+        '/shop/">' +
+        I.shopAll +
+        '</a></div>';
       foot.hidden = true;
       return;
     }
@@ -525,7 +805,7 @@
     return true;
   }
   function openDrawer() {
-    if (!drawer || location.pathname === '/cart/') return;
+    if (!drawer || location.pathname === BASE + '/cart/') return;
     renderDrawer();
     openSheet(drawer);
   }
@@ -586,7 +866,8 @@
 
   $$('dialog.sheet').forEach(function (d) {
     d.addEventListener('close', syncSheets);
-    swipeToClose(d, d.classList.contains('sheet--left') ? -1 : 1);
+    var startSide = d.classList.contains('sheet--start');
+    swipeToClose(d, startSide === !AR ? -1 : 1);
   });
   if (window.matchMedia) {
     var desktop = window.matchMedia('(min-width: 960px)');
@@ -622,14 +903,10 @@
       var on = w.indexOf(slug) !== -1;
       var p = bySlug(slug);
       btn.setAttribute('aria-pressed', on ? 'true' : 'false');
-      if (p)
-        btn.setAttribute(
-          'aria-label',
-          (on ? 'Remove ' : 'Save ') + p.name + (on ? ' from' : ' to') + ' wishlist'
-        );
+      if (p) btn.setAttribute('aria-label', I.wishAria(on, p.name));
     });
     $$('[data-open-cart]').forEach(function (a) {
-      a.setAttribute('aria-label', 'Cart, ' + n + (n === 1 ? ' item' : ' items'));
+      a.setAttribute('aria-label', I.cartAria(n));
     });
     if (drawer && drawer.open) renderDrawer();
     renderWishlist();
@@ -648,7 +925,7 @@
       e.preventDefault();
       toggleWish(el.getAttribute('data-wish'), el);
     } else if ((el = t.closest('[data-open-cart]'))) {
-      if (location.pathname === '/cart/' || !canModal(drawer)) return;
+      if (location.pathname === BASE + '/cart/' || !canModal(drawer)) return;
       e.preventDefault();
       openDrawer();
     } else if (t.closest('[data-open-search]')) {
@@ -671,7 +948,12 @@
       );
     } else if ((el = t.closest('[data-line-remove]'))) {
       removeItem(el.closest('[data-key]').getAttribute('data-key'));
-    } else if ((el = t.closest('[data-card] a[href^="/perfumes/"]')) && !reduceMotion) {
+    } else if ((el = t.closest('[data-lang-switch]'))) {
+      if (/\/shop\//.test(location.pathname)) {
+        e.preventDefault();
+        location.href = el.getAttribute('href') + location.search;
+      }
+    } else if ((el = t.closest('[data-card] a[href*="/perfumes/"]')) && !reduceMotion) {
       var media = $('.card__media', el.closest('[data-card]'));
       $$('.card__media').forEach(function (m) {
         m.style.viewTransitionName = '';
@@ -773,7 +1055,15 @@
         '<div class="results__chips">' +
         DATA.popularNotes
           .map(function (n) {
-            return '<a class="chip chip--small" href="/shop/?note=' + n.key + '">' + esc(n.name) + '</a>';
+            return (
+              '<a class="chip chip--small" href="' +
+              BASE +
+              '/shop/?note=' +
+              n.key +
+              '">' +
+              esc(AR ? n.nameAr : n.name) +
+              '</a>'
+            );
           })
           .join('') +
         '</div>'
@@ -785,20 +1075,21 @@
       input.removeAttribute('aria-activedescendant');
       if (!q) {
         items = [];
-        panel.innerHTML = '<p class="results__label">Popular notes</p>' + chips();
+        panel.innerHTML = '<p class="results__label">' + I.popular + '</p>' + chips();
         open(document.activeElement === input);
         return;
       }
       var found = search(q) || [];
       items = found.slice(0, 6);
       if (!items.length) {
-        panel.innerHTML =
-          '<p class="results__empty">Nothing matches “' + esc(q) + '”. Try a note instead:</p>' + chips();
+        panel.innerHTML = '<p class="results__empty">' + esc(I.none(q)) + '</p>' + chips();
         open(true);
         return;
       }
       panel.innerHTML =
-        '<ul class="results" role="listbox" aria-label="Fragrances">' +
+        '<ul class="results" role="listbox" aria-label="' +
+        I.resultsLabel +
+        '">' +
         items
           .map(function (r, i) {
             var p = r.p;
@@ -807,29 +1098,29 @@
               id +
               '-opt-' +
               i +
-              '" aria-selected="false"><a href="/perfumes/' +
+              '" aria-selected="false"><a href="' +
+              BASE +
+              '/perfumes/' +
               p.slug +
               '/" tabindex="-1">' +
               '<img src="/assets/img/products/' +
               p.slug +
               '-320.webp" width="320" height="400" alt="" decoding="async">' +
-              '<span class="results__text"><strong>' +
+              '<span class="results__text"><strong lang="en" dir="ltr">' +
               esc(p.name) +
               '</strong><span>' +
-              esc(p.accord) +
-              ', from ' +
-              money(p.from) +
+              esc(I.resultLine(p, money(p.from))) +
               '</span></span></a></li>'
             );
           })
           .join('') +
         '</ul>' +
-        '<a class="results__all" href="/shop/?q=' +
+        '<a class="results__all" href="' +
+        BASE +
+        '/shop/?q=' +
         encodeURIComponent(q) +
         '">' +
-        (found.length > items.length
-          ? 'See all ' + found.length + ' results'
-          : 'Show ' + (found.length === 1 ? 'it' : 'these') + ' in the shop') +
+        (found.length > items.length ? I.seeAll(found.length) : found.length === 1 ? I.showIt : I.showThese) +
         '</a>';
       open(true);
     }
@@ -865,7 +1156,7 @@
         setActive(active - 1);
       } else if (e.key === 'Enter' && active >= 0 && items[active]) {
         e.preventDefault();
-        location.href = '/perfumes/' + items[active].p.slug + '/';
+        location.href = BASE + '/perfumes/' + items[active].p.slug + '/';
       } else if (e.key === 'Escape') {
         if (searching()) {
           e.preventDefault();
@@ -898,7 +1189,7 @@
       if (!compact.matches) closeMode(false);
     };
     if (compact.addEventListener) compact.addEventListener('change', onWidth);
-    if (location.pathname.indexOf('/shop/') === 0) {
+    if (location.pathname.indexOf(BASE + '/shop/') === 0) {
       var q = new URLSearchParams(location.search).get('q');
       if (q) input.value = q;
     }
@@ -926,23 +1217,15 @@
       var c = current();
       var q = clampQty(qty.value);
       priceEl.textContent = money(c.price * q);
-      mlEl.textContent = q > 1 ? 'for ' + q + ' × ' + c.ml + '\u00a0ml' : 'for ' + c.ml + '\u00a0ml';
+      mlEl.textContent = I.forMl(q, c.ml);
       retrigger(priceEl, 'tick');
-      if (barPrice)
-        barPrice.textContent = money(c.price * q) + ', ' + (q > 1 ? q + ' × ' : '') + c.ml + '\u00a0ml';
+      if (barPrice) barPrice.textContent = I.barPrice(money(c.price * q), q, c.ml);
       $$('[data-step]', form).forEach(function (b) {
         var step = parseInt(b.getAttribute('data-step'), 10);
         b.disabled = step < 0 ? q <= 1 : q >= MAX_QTY;
       });
       if (wa) {
-        var text =
-          'Hello, I would like to order ' +
-          p.name +
-          ' (' +
-          c.ml +
-          '\u00a0ml)' +
-          (q > 1 ? ' × ' + q : '') +
-          '.';
+        var text = I.waOrder(p.name, c.ml, q);
         wa.href =
           'https://wa.me/' + DATA.whatsapp + '?text=' + encodeURIComponent(text.replace(/\u00a0/g, ' '));
       }
@@ -1058,9 +1341,9 @@
           grid.appendChild(c);
         });
         var filtered = q.value.trim() || nv;
-        var label = shown + (shown === 1 ? ' fragrance' : ' fragrances');
-        if (nv) label += ' with ' + note.options[note.selectedIndex].text;
-        if (q.value.trim()) label += ' for “' + q.value.trim() + '”';
+        var label = I.count(shown);
+        if (nv) label += I.withNote(note.options[note.selectedIndex].text);
+        if (q.value.trim()) label += I.forQuery(q.value.trim());
         countEl.textContent = label;
         empty.hidden = shown !== 0;
         grid.hidden = shown === 0;
@@ -1209,10 +1492,11 @@
     if (bar && summaryBtn) {
       var barBtn = $('button', bar);
       var ticking = false;
+      var typing = false;
       var check = function () {
         ticking = false;
         var r = summaryBtn.getBoundingClientRect();
-        var show = window.innerWidth < 960 && !checkout.hidden && r.top > window.innerHeight;
+        var show = !typing && window.innerWidth < 960 && !checkout.hidden && r.top > window.innerHeight;
         bar.classList.toggle('is-shown', show);
         bar.setAttribute('aria-hidden', show ? 'false' : 'true');
         barBtn.tabIndex = show ? 0 : -1;
@@ -1226,6 +1510,22 @@
       };
       window.addEventListener('scroll', onScroll, { passive: true });
       window.addEventListener('resize', onScroll, { passive: true });
+      var isField = function (el) {
+        return (
+          el && el.matches && el.matches('input:not([type="radio"]):not([type="checkbox"]), select, textarea')
+        );
+      };
+      checkout.addEventListener('focusin', function (e) {
+        if (!isField(e.target)) return;
+        typing = true;
+        check();
+      });
+      checkout.addEventListener('focusout', function () {
+        setTimeout(function () {
+          typing = isField(document.activeElement) && checkout.contains(document.activeElement);
+          check();
+        }, 150);
+      });
       check();
     }
 
@@ -1236,25 +1536,38 @@
       else input.removeAttribute('aria-describedby');
       if (err) err.textContent = msg || '';
     }
+    var rules = [
+      [fields.name, I.errName],
+      [fields.phone, I.errPhone],
+      [fields.governorate, I.errGov],
+      [fields.city, I.errCity],
+      [fields.address, I.errAddress],
+    ];
+    var attempted = false;
+    function problemFor(input, msg) {
+      if (input === fields.phone) return normalizePhone(input.value) ? '' : msg;
+      return input.value.trim() ? '' : msg;
+    }
     function validate() {
+      attempted = true;
+      checkout.classList.add('was-validated');
       var problems = [];
-      function need(input, msg) {
-        var ok = input.value.trim().length > 0;
-        setError(input, ok ? '' : msg);
-        if (!ok) problems.push(input);
-      }
-      need(fields.name, 'Enter your full name.');
-      var phoneOk = normalizePhone(fields.phone.value);
-      setError(fields.phone, phoneOk ? '' : 'Enter an Egyptian mobile number, for example 010 1234 5678.');
-      if (!phoneOk) problems.push(fields.phone);
-      need(fields.governorate, 'Choose your governorate.');
-      need(fields.city, 'Enter your city or area.');
-      need(fields.address, 'Enter your street address.');
+      rules.forEach(function (r) {
+        var msg = problemFor(r[0], r[1]);
+        setError(r[0], msg);
+        if (msg) problems.push(r[0]);
+      });
       return problems;
     }
-    Object.keys(fields).forEach(function (k) {
-      fields[k].addEventListener('blur', function () {
-        if (fields[k].getAttribute('aria-invalid') === 'true') validate();
+    rules.forEach(function (r) {
+      var input = r[0];
+      var clearWhenFixed = function () {
+        if (input.getAttribute('aria-invalid') === 'true' && !problemFor(input, r[1])) setError(input, '');
+      };
+      input.addEventListener('input', clearWhenFixed);
+      input.addEventListener('change', clearWhenFixed);
+      input.addEventListener('blur', function () {
+        if (attempted) setError(input, problemFor(input, r[1]));
       });
     });
 
@@ -1269,63 +1582,79 @@
       }
       var problems = validate();
       if (problems.length) {
-        formError.textContent =
-          problems.length === 1
-            ? 'One detail needs fixing above.'
-            : problems.length + ' details need fixing above.';
+        formError.textContent = I.formError(problems.length);
+        problems[0].scrollIntoView({ block: 'center', behavior: 'instant' });
         problems[0].focus({ preventScroll: true });
-        problems[0].scrollIntoView({ block: 'center', behavior: reduceMotion ? 'auto' : 'smooth' });
         return;
       }
       var ship = shippingChoice();
-      var payment = $('input[name="payment"]:checked', checkout).value;
+      var paymentKey = $('input[name="payment"]:checked', checkout).value;
+      var payMethod =
+        DATA.payments.filter(function (m) {
+          return m.key === paymentKey;
+        })[0] || DATA.payments[0];
+      var payment = AR ? payMethod.nameAr : payMethod.name;
+      var govText = fields.governorate.options[fields.governorate.selectedIndex].text;
+      var M = I.msg;
       var phone = normalizePhone(fields.phone.value);
       var sub = subtotal();
       var ref = 'XN-' + Date.now().toString(36).toUpperCase().slice(-6);
       var msg =
-        '🛍️ *New order from the X Note website*\n' +
-        'Order: *' +
+        '\uD83D\uDECD\uFE0F *' +
+        M.title +
+        '*\n' +
+        M.order +
+        ': *' +
         ref +
         '*\n\n' +
-        '*Items*\n' +
+        '*' +
+        M.items +
+        '*\n' +
         lines
           .map(function (l) {
-            return '• ' + l.label + ' × ' + l.qty + ' = ' + money(l.total);
+            return '\u2022 ' + l.msgLabel + ' \u00D7 ' + l.qty + ' = ' + money(l.total);
           })
           .join('\n') +
         '\n\n' +
-        'Subtotal: ' +
+        M.subtotal +
+        ': ' +
         money(sub) +
         '\n' +
-        'Shipping: ' +
-        ship.name +
+        M.shipping +
+        ': ' +
+        (AR ? ship.nameAr : ship.name) +
         ' (' +
-        ship.days +
+        (AR ? ship.daysAr : ship.days) +
         ') ' +
         money(ship.price) +
         '\n' +
-        '*Total: ' +
+        '*' +
+        M.total +
+        ': ' +
         money(sub + ship.price) +
         '*\n' +
-        'Payment: ' +
+        M.payment +
+        ': ' +
         payment +
         '\n\n' +
-        '*Delivery*\n' +
-        'Name: ' +
+        '*' +
+        M.delivery +
+        '*\n' +
+        M.name +
+        ': ' +
         fields.name.value.trim() +
         '\n' +
-        'Mobile: ' +
+        M.mobile +
+        ': ' +
         phone +
         '\n' +
-        'Address: ' +
-        fields.address.value.trim() +
-        ', ' +
-        fields.city.value.trim() +
-        ', ' +
-        fields.governorate.value +
+        M.address +
+        ': ' +
+        [fields.address.value.trim(), fields.city.value.trim(), govText].join(M.sep) +
         '\n' +
-        (fields.notes.value.trim() ? 'Notes: ' + fields.notes.value.trim() + '\n' : '') +
-        '\nPlease confirm my order.';
+        (fields.notes.value.trim() ? M.notes + ': ' + fields.notes.value.trim() + '\n' : '') +
+        '\n' +
+        M.confirm;
       var url = 'https://wa.me/' + DATA.whatsapp + '?text=' + encodeURIComponent(msg.replace(/\u00a0/g, ' '));
 
       if (!remember || remember.checked) {
@@ -1336,7 +1665,7 @@
           city: fields.city.value.trim(),
           address: fields.address.value.trim(),
           shipping: ship.key,
-          payment: payment,
+          payment: paymentKey,
         });
       } else store.remove(CUSTOMER_KEY);
 
@@ -1347,7 +1676,7 @@
         $('[data-done-ref]', done).textContent = ref;
         $('[data-done-wa]', done).href = url;
         $('[data-cart-view]').hidden = true;
-        $('[data-cart-title]').textContent = 'Order ready to send';
+        $('[data-cart-title]').textContent = I.doneTitle;
         done.hidden = false;
         store.set(CART_KEY, []);
         refresh();
@@ -1382,7 +1711,8 @@
     var byName = function (name) {
       var key = norm(name);
       for (var i = 0; i < DATA.products.length; i++)
-        if (norm(DATA.products[i].name) === key) return DATA.products[i];
+        if (norm(DATA.products[i].name) === key || norm(DATA.products[i].nameAr) === key)
+          return DATA.products[i];
       return null;
     };
 
@@ -1397,8 +1727,16 @@
       var out = { items: [], problems: 0, ref: '', claimed: {}, shipping: null };
       lines.forEach(function (l) {
         var m;
-        if ((m = l.match(/^Order:\s*(\S+)/i))) out.ref = m[1];
-        else if ((m = l.match(/^[•\-]\s*(.+?),\s*(\d+)\s*ml\s*[×x]\s*(\d+)\s*=\s*([\d,]+)\s*EGP$/i))) {
+        var CUR = '\\s*(?:EGP|ج\\.م)';
+        if ((m = l.match(/^(?:Order|رقم الطلب):\s*(\S+)/i))) out.ref = m[1];
+        else if (
+          (m = l.match(
+            new RegExp(
+              '^[•\\-]\\s*(.+?)[,،]\\s*(\\d+)\\s*(?:ml|مل)\\s*[×x]\\s*(\\d+)\\s*=\\s*([\\d,]+)' + CUR + '$',
+              'i'
+            )
+          ))
+        ) {
           var p = byName(m[1]);
           var size =
             p &&
@@ -1411,19 +1749,25 @@
           else if (!size) item.error = 'This size does not exist for ' + p.name;
           else item.correct = size.price * qty;
           out.items.push(item);
-        } else if ((m = l.match(/^[•\-]\s*(.+?)\s*[×x]\s*(\d+)\s*=\s*([\d,]+)\s*EGP$/i))) {
+        } else if (
+          (m = l.match(new RegExp('^[•\\-]\\s*(.+?)\\s*[×x]\\s*(\\d+)\\s*=\\s*([\\d,]+)' + CUR + '$', 'i')))
+        ) {
           var qtyB = parseInt(m[2], 10);
           var bundle = { label: m[1] + ' × ' + qtyB, claimed: num(m[3]) };
-          if (norm(m[1]) === norm(DATA.bundle.name)) bundle.correct = DATA.bundle.price * qtyB;
+          if (norm(m[1]) === norm(DATA.bundle.name) || norm(m[1]) === norm(DATA.bundle.nameAr))
+            bundle.correct = DATA.bundle.price * qtyB;
           else bundle.error = 'Not a product in the shop';
           out.items.push(bundle);
-        } else if ((m = l.match(/^Subtotal:\s*([\d,]+)/i))) out.claimed.subtotal = num(m[1]);
-        else if ((m = l.match(/^Shipping:\s*(.+?)\s*\(.*?\)\s*([\d,]+)\s*EGP/i))) {
+        } else if ((m = l.match(/^(?:Subtotal|المجموع الفرعي):\s*([\d,]+)/i)))
+          out.claimed.subtotal = num(m[1]);
+        else if (
+          (m = l.match(new RegExp('^(?:Shipping|الشحن):\\s*(.+?)\\s*\\(.*?\\)\\s*([\\d,]+)' + CUR, 'i')))
+        ) {
           var ship = DATA.shipping.filter(function (s) {
-            return norm(s.name) === norm(m[1]);
+            return norm(s.name) === norm(m[1]) || norm(s.nameAr) === norm(m[1]);
           })[0];
           out.shipping = { label: m[1], claimed: num(m[2]), correct: ship ? ship.price : null };
-        } else if ((m = l.match(/^Total:\s*([\d,]+)/i))) out.claimed.total = num(m[1]);
+        } else if ((m = l.match(/^(?:Total|الإجمالي):\s*([\d,]+)/i))) out.claimed.total = num(m[1]);
       });
       return out;
     }

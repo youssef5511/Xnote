@@ -2,6 +2,8 @@ User-agent: *
 Allow: /
 Disallow: /cart/
 Disallow: /wishlist/
+Disallow: /ar/cart/
+Disallow: /ar/wishlist/
 Disallow: /order-check/
 
 Sitemap: https://xnote-perfume.tech/sitemap.xml
